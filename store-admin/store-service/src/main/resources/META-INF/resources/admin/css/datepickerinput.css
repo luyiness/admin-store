@@ -1,0 +1,28 @@
+.WdateDiv #dpTime input {
+    width: 36px;!important;
+    height: 20px;
+    text-align: center;
+    border: #ccc 1px solid;
+}
+
+.WdateDiv .mmMenu {
+    z-index: -10;
+    width: 180px;
+    height: 220px;
+    margin-top: -46px;
+    margin-left: 26px;
+}
+
+.WdateDiv .ssMenu {
+    z-index: -10;
+    width: 180px;
+    height: 220px;
+    margin-top: -24px;
+    margin-left: 26px;
+}
+
+
+.WdateDiv .hhMenu {
+    z-index: -10;
+}
+

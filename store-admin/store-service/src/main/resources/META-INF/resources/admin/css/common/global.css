@@ -1,0 +1,343 @@
+/*头部样式*/
+.headerCom{
+    background: #045294;
+    height: 3rem;
+    line-height: 3rem;
+}
+.headerCom h1{
+    position: relative;
+    width: 11rem;
+    margin: 0 auto;
+    height: 3rem;
+    line-height: 3rem;
+    text-align: center;
+    color: #fff;
+    font-size: 1.4rem;
+}
+.headerCom span{
+    /*width: 2rem;*/
+    /*height: 1.5rem;*/
+    /*text-align: center;*/
+    /*position: absolute;*/
+    /*left: 1rem;*/
+    /*top: 0.8rem;*/
+    width: 5rem;
+    height: 3rem;
+    text-align: center;
+    position: absolute;
+    left: 0.5rem;
+    top: 0rem;
+}
+.headerBack{
+    background:url("../images/leftBack.png") no-repeat 100% ;
+    /* background-position: 0; */
+    /* background-size: 85%; */
+    background-position: 0;
+    background-size: 100%;
+    display: inline-block;
+    width: 2.5rem!important;
+    margin-left: 0.29rem;
+}
+.headerList{
+    background: url(../images/headerIcon.png) no-repeat 100%;
+    /* background-position: 0; */
+    /* background-size: 85%; */
+    background-position: 0;
+    background-size: 100%;
+    display: inline-block;
+    width: 2.5rem!important;
+    margin-left: 0.29rem;
+}
+/*头部样式 end*/
+
+/*左侧滑样式*/
+/*.leftAll{*/
+    /*width: 100%;*/
+    /*height: 100%;*/
+    /*background: rgba(0,0,0,.5);*/
+    /*opacity: 0.5;*/
+    /*overflow: hidden;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*z-index: 5;*/
+/*}*/
+/*.po{*/
+    /*position: relative;*/
+/*}*/
+
+.leftBg{
+    /*height: 100%;*/
+    /*position: fixed;*/
+    /*top: 0;*/
+    /*/!*left: -100%;*!/*/
+    /*background-color: rgba(0, 0, 0, 0.3);*/
+    /*z-index: 1000;*/
+    /*width: 100%;*/
+    /*display: none;*/
+
+    height: 100%;
+    /*opacity: 0;
+    transition-duration: 0s;*/
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.3);
+    z-index:1000;
+    width: 100%;
+    display: none;
+    /*opacity: 0;*/
+    /*-webkit-transform: translateX(-100%);-webkit-transition: all 0.4s;*/
+}
+.Bchecked{
+    opacity: 1;
+    transition: opacity 2s;
+}
+.Cchecked{
+    -webkit-transform: translateX(0px);-webkit-transition: all 0.4s;
+}
+
+.left{
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    /*left: -70%;*/
+    height: 100%;
+    width: 11rem;
+    background: url("../images/leftBg.png") no-repeat 100%;
+    z-index: 1001;
+    -webkit-transform: translateX(-100%);-webkit-transition: all 0.4s;
+    /*display: none;*/
+}
+
+#offon:checked ~ .backlab{
+    opacity: 1;
+    transition: opacity 2s;
+}
+#offon:checked ~ .menuDiv {-webkit-transform: translateX(0px);-webkit-transition: all 0.4s;}
+/*.backlab {*/
+/*height: 100%;*/
+/*/!*opacity: 0;*/
+/*transition-duration: 0s;*!/*/
+/*position:fixed;*/
+/*background-color:rgba(0, 0, 0, 0.3);*/
+/*z-index:1000;*/
+/*width: 100%;*/
+/*}*/
+input[type="checkbox"] + label, input[type="radio"] + label{
+     margin-left: 0rem!important;
+     margin-right: 0rem!important;
+}
+
+.topImg{
+     text-align: center;
+     margin: 0 auto;
+     margin-top: 3rem;
+ }
+.topImg img{
+    width: 3.5rem;
+    vertical-align: middle;
+}
+.phoneA{
+    display: block;
+    text-align: center;
+    /*margin: 1rem 0;*/
+    font-size: 1.1rem;
+    color: #fff;
+}
+ul.leftcon {
+    margin: 0 auto;
+    width: 65%;
+    /*margin-top: 3rem;*/
+}
+.leftcon li{
+    padding: 0.5rem 0;
+}
+.leftcon img,.leftcon a{
+    display: inline-block;
+    vertical-align: middle;
+}
+.leftcon img{
+    width: 1.5rem;
+}
+.leftcon a{
+    display: inline-block;
+    color: #fff;
+    font-size: 0.9rem;
+    /* text-indent: 0.5rem; */
+    letter-spacing: 0.1rem;
+    /* width: 100%; */
+    padding: 0 0.5rem;
+}
+.leftFooter {
+    margin: 3rem auto;
+    text-align: center;
+}
+.leftFooter a{
+    display: inline-block;
+    width: 4rem;
+    height: 1.8rem;
+    line-height: 1.8rem;
+    text-align: center;
+    border: 1px solid #fff;
+    border-radius: 0.7rem;
+    -webkit-border-radius: 0.7rem;
+    -moz-border-radius: 0.7rem;
+    color: #fff;
+    font-size: 1rem;
+}
+.register{
+    margin-right: 1rem;
+}
+
+/*/!*页头，左侧栏样式*!/*/
+header{
+    position: relative;
+    /*background: #045294;*/
+    /*height: 3.5rem;*/
+    margin: 0 auto;
+    text-align: center;
+    /*line-height: 3.5rem;*/
+}
+
+::-webkit-scrollbar {
+    width: 0;
+}
+.backlab {
+    height: 100%;
+    /*opacity: 0;
+    transition-duration: 0s;*/
+    position:fixed;
+    top: 0;
+    left: 0;
+    background-color:rgba(0, 0, 0, 0.3);
+    z-index:1000;
+    width: 100%;
+}
+#offon:checked ~ .backlab{
+    opacity: 1;
+    transition: opacity 2s;
+}
+.top{
+    position: relative;
+    width: 100%;
+    height: 3.5rem;
+    /*background: url(../image/index/tplogo.png) no-repeat center center;*/
+    /*background-size: 7rem;*/
+    background-color: #045294;
+}
+.top h3{
+    width: 7rem;
+    height:3.5rem;
+    line-height:3.5rem;
+    text-align: center;
+    margin: 0 auto;
+    color: white;
+    background-color: #045294;
+    font-size: 1.3rem;
+}
+.topright{
+    position: absolute;
+    right: 0;
+    top:0;
+    height: 3.5rem;
+    width: 3rem;
+    background: url(../images/Phone@2x.png) no-repeat center center;
+    background-size: 1.7rem 1.7rem;
+}
+.topleft{
+    height: 85%;
+    padding: .2rem 0;
+}
+
+#offon:checked ~ .menuDiv {-webkit-transform: translateX(0px);-webkit-transition: all 0.4s;}
+
+/*地址选择*/
+.content{
+    position: relative;
+}
+.content span{
+    position: absolute;
+    right: 0;
+    /*top: 11px;*/
+    display: inline-block;
+    vertical-align: middle;
+    height: 1rem;
+    width: 10%;
+    background: url(../../common/images/drop-arrow.png) no-repeat 100%;
+    background-position: 55% -1.3rem;
+}
+
+.content span.remove {
+    background-position: 50% -0.3rem;
+}
+.selectListWrap {
+    position: fixed;
+    width: 102%;
+    left: 0px;
+    bottom: 0px;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    z-index: 999999;
+    display: none;
+    min-width: 330px;
+    /* margin-bottom: 20px; */
+}
+
+.selectList {
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.5);
+}
+
+.topSelect {
+    border-bottom: 1px solid #ccc;
+    background: #f0f0f0;
+    font-size: 13px;
+    width: 100%;
+}
+
+
+.topSelect > a.selected {
+    background: #fff;
+    border-bottom: 1px solid #fff;
+    color: #46A4FF;
+}
+
+.topSelect > a:first-child {
+    border-left: none;
+}
+
+.topSelect > a:last-child.active {
+    border-right: 1px solid #ccc;
+}
+
+.selectCon {
+    width: 99%;
+    min-height: 10px;
+    background-color: #fff;
+    padding: 10px 0px;
+}
+
+.wrap {
+    font-size: 13px;
+}
+/*地址选择 end*/
+/*右边箭头*/
+.rDiv{
+    background-color: #fff;
+    background-image: url(../../myScore/images/right.png);
+    background-repeat: no-repeat;
+    background-position: 96%;
+    background-size: .7rem;
+}
+/* 右边箭头 end*/
+button.backTop,button{
+    cursor: inherit!important;
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color:rgba(255,255,255,0);
+}
+
+
+
+
+
+

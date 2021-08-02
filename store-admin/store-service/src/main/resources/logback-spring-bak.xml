@@ -1,0 +1,89 @@
+<!--<?xml version="1.0" encoding="UTF-8"?>-->
+<!--&lt;!&ndash;-->
+<!--    Copyright 2010-2011 The myBatis Team-->
+<!--    Licensed under the Apache License, Version 2.0 (the "License");-->
+<!--    you may not use this file except in compliance with the License.-->
+<!--    You may obtain a copy of the License at-->
+<!--        http://www.apache.org/licenses/LICENSE-2.0-->
+<!--    Unless required by applicable law or agreed to in writing, software-->
+<!--    distributed under the License is distributed on an "AS IS" BASIS,-->
+<!--    WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.-->
+<!--    See the License for the specific language governing permissions and-->
+<!--    limitations under the License.-->
+<!--&ndash;&gt;-->
+<!--<configuration debug="false">-->
+<!--    &lt;!&ndash;定义日志文件的存储地址 勿在 LogBack 的配置中使用相对路径&ndash;&gt;-->
+<!--    <springProfile name="prod">-->
+<!--        <property name="BASE_LOG_HOME" value="/data/logback"/>-->
+<!--    </springProfile>-->
+<!--    &lt;!&ndash;非生产环境&ndash;&gt;-->
+<!--    <springProfile name="!prod">-->
+<!--        <property name="BASE_LOG_HOME" value="/home/loginuser/tpdata/log"/>-->
+<!--    </springProfile>-->
+<!--    <property name="LOG_HOME" value="${BASE_LOG_HOME}/store"/>-->
+<!--    <property name="LOG_HOME_FILENAME_INFO" value="${LOG_HOME}/store-service-info.log"/>-->
+<!--    &lt;!&ndash; 不带彩色的日志在控制台输出时候的设置 &ndash;&gt;-->
+<!--    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">-->
+<!--        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">-->
+<!--            &lt;!&ndash;格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符&ndash;&gt;-->
+<!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>-->
+<!--        </encoder>-->
+<!--    </appender>-->
+<!--    &lt;!&ndash; 按照每天生成日志文件 &ndash;&gt;-->
+<!--    <appender name="fileInfoLog" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <filter class="ch.qos.logback.classic.filter.LevelFilter">-->
+<!--            <level>ERROR</level>-->
+<!--            <onMatch>DENY</onMatch>-->
+<!--            <onMismatch>ACCEPT</onMismatch>-->
+<!--        </filter>-->
+<!--        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">-->
+<!--            &lt;!&ndash;格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符&ndash;&gt;-->
+<!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>-->
+<!--        </encoder>-->
+<!--        <file>${LOG_HOME_FILENAME_INFO}</file>-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            <fileNamePattern>${LOG_HOME_FILENAME_INFO}-%d{yyyy-MM-dd}.%i.log.zip</fileNamePattern>-->
+<!--            &lt;!&ndash; 如果按天来回滚，则最大保存时间为365天，365天之前的都将被清理掉 &ndash;&gt;-->
+<!--            <maxHistory>90</maxHistory>-->
+<!--            &lt;!&ndash; 日志总保存量为1GB &ndash;&gt;-->
+<!--            <totalSizeCap>5GB</totalSizeCap>-->
+<!--            <timeBasedFileNamingAndTriggeringPolicy-->
+<!--                    class="ch.qos.logback.core.rolling.SizeAndTimeBasedFNATP">-->
+<!--                &lt;!&ndash;文件达到 最大256MB时会被压缩和切割 &ndash;&gt;-->
+<!--                <maxFileSize>256MB</maxFileSize>-->
+<!--            </timeBasedFileNamingAndTriggeringPolicy>-->
+<!--        </rollingPolicy>-->
+<!--    </appender>-->
+<!--    <appender name="fileErrorLog" class="ch.qos.logback.core.rolling.RollingFileAppender">-->
+<!--        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">-->
+<!--            <level>ERROR</level>-->
+<!--        </filter>-->
+<!--        <encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">-->
+<!--            &lt;!&ndash;格式化输出：%d表示日期，%thread表示线程名，%-5level：级别从左显示5个字符宽度%msg：日志消息，%n是换行符&ndash;&gt;-->
+<!--            <pattern>%d{yyyy-MM-dd HH:mm:ss.SSS} [%thread] %-5level %logger{50} - %msg%n</pattern>-->
+<!--        </encoder>-->
+<!--        &lt;!&ndash;滚动策略&ndash;&gt;-->
+<!--        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">-->
+<!--            &lt;!&ndash;路径&ndash;&gt;-->
+<!--            <fileNamePattern>${LOG_HOME}/store-service-error.log.%d{yyyy-MM-dd}.log</fileNamePattern>-->
+<!--            &lt;!&ndash;日志文件保留天数&ndash;&gt;-->
+<!--            <MaxHistory>30</MaxHistory>-->
+<!--        </rollingPolicy>-->
+<!--        &lt;!&ndash;日志文件最大的大小&ndash;&gt;-->
+<!--        <triggeringPolicy class="ch.qos.logback.core.rolling.SizeBasedTriggeringPolicy">-->
+<!--            <MaxFileSize>500MB</MaxFileSize>-->
+<!--        </triggeringPolicy>-->
+<!--    </appender>-->
+<!--    &lt;!&ndash; 日志输出级别 &ndash;&gt;-->
+<!--    <root level="INFO">-->
+<!--        <appender-ref ref="STDOUT"/>-->
+<!--        <appender-ref ref="fileInfoLog"/>-->
+<!--        <appender-ref ref="fileErrorLog"/>-->
+<!--    </root>-->
+<!--    &lt;!&ndash;测试环境+开发环境. 多个使用逗号隔开. &ndash;&gt;-->
+<!--    &lt;!&ndash;<springProfile name="local,test,dev,sit,uat">&ndash;&gt;-->
+<!--    &lt;!&ndash;<logger name="admin.web" level="INFO">&ndash;&gt;-->
+<!--    &lt;!&ndash;<appender-ref ref="fileInfoLog"/>&ndash;&gt;-->
+<!--    &lt;!&ndash;</logger>&ndash;&gt;-->
+<!--    &lt;!&ndash;</springProfile>&ndash;&gt;-->
+<!--</configuration>-->

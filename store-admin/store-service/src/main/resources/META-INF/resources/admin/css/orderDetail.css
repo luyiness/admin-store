@@ -1,0 +1,307 @@
+
+.myChoice{
+    background: url("../images/myOrderIcon.png") 100% no-repeat;
+    background-position: 0;
+    text-indent: 0.5em;
+    color: #197fd7;
+    font-weight: bold;
+}
+.track-list li .node-icon{
+    position: absolute; left: -6px; top: 50%; width: 11px; height: 11px;
+    background: url("../images/order-icons.png")  -21px -72px no-repeat;}
+
+
+.line {
+    height: 5px;
+    background: #dcdcdc;
+    width: 100%;
+    margin-top: 5px;
+    /*margin-left: 20px;*/
+}
+
+.contentDetail {
+    width: 95%;
+    padding-left: 4%;
+    /*padding-top: 2.5%;*/
+    color: #000;
+    line-height: 25px;
+}
+.conAl{
+    padding-top: 2.5%;
+}
+.shipping{
+    background: #fafdfe;
+    width: 100%;
+    margin: 15px 0 0 0;
+    padding: 0px;
+}
+
+.package{
+    display: inline-block;
+    padding: 2px 10px;
+    border-radius: 5px;
+    margin:4px 10px;
+    cursor: pointer;
+}
+
+.packageFont{
+    border: 1px solid #53a0e7;
+    color: #53a0e7;
+}
+
+.packageInfo{
+    padding: 0px 15px;
+}
+
+.goodsPicSpan{
+    display: inline-block;
+    border: 1px solid #e3e3e3;
+    margin: 5px 5px;
+}
+
+.goodsPicSpan img{
+    height: 80px;
+}
+
+.title {
+    font-weight: bold;
+    /*margin: 15px;*/
+    margin-left: 0px;
+    text-indent: 0!important;
+
+}
+
+.detailTa td {
+    border: solid 1px #d2d2d2;
+}
+
+.detailTa {
+    margin-top: 10px;
+}
+
+.detailsho {
+    margin-top: 10px;
+}
+
+.detailTa td {
+    height: 30px;
+    text-align: left;
+    padding-left: 40px;
+}
+
+.detailTa tr td:first-child {
+    background: #e8f5fb;
+    width: 22%;
+}
+
+.detailTa tr td:nth-child(2) {
+    width: 30%;
+}
+
+.detailTa tr td:nth-child(3n+0) {
+    background: #e8f5fb;
+    width: 22%;
+}
+
+
+.detailOther td {
+    border: solid 1px #d2d2d2;
+}
+.detailOther {
+    margin-top: 10px;
+}
+.detailOther td {
+    height: 30px;
+    text-align: left;
+    padding-left: 0!important;
+}
+
+.detailOther tr td:first-child {
+    background: #e8f5fb;
+    width: 5%;
+
+    padding-left: 0;
+    text-indent: 0;
+    text-align: center;
+}
+
+.detailOther tr td:nth-child(2) {
+    width: 45%;
+    max-width: 367px;
+    /*max-width: 179px;*/
+    overflow: hidden;
+    white-space: nowrap;
+    text-indent: 0!important;
+}
+.detailOther tr td:nth-child(2).len{
+    width: 184px!important;
+}
+.detailOther tr td:nth-child(3n+0) {
+    background: #e8f5fb;
+    width: 5%;
+    text-align: center!important;
+    text-indent: 0!important;
+}
+
+
+.litilesum {
+    padding-right: 40px;
+}
+
+.detailImg {
+    margin-top: 0px;
+}
+
+.circle {
+    width: 8px;
+    height: 8px;
+    background-color: #999999;
+    -webkit-border-radius: 100px;
+    display: inline-block;
+    margin: 2px;
+    margin-bottom: 0px;
+    /*margin-top: 16px;*/
+    /*margin-right: 5px;*/
+}
+
+/*.suli {*/
+/*width: 2px;*/
+/*height: 100%;*/
+/*background: #999999;*/
+/*margin-left: 5px;*/
+/*margin-top: -10px;*/
+/*!*position: absolute;*!*/
+/*position: relative;*/
+/*top: 10px;*/
+/*}*/
+
+/*
+.circleLasted {
+    width: 18px;
+    height: 18px;
+    background-color: #199ddb;
+    -webkit-border-radius: 100px;
+    display: inline-block;
+    margin: 2px;
+    margin-left: -3px;
+    margin-bottom: 0px;
+    margin-top: 4px;
+}
+*/
+
+/*进度条*/
+.progress-approve {
+    line-height: 16px;
+    /*margin-top: 16px;*/
+}
+
+
+
+.progress-approve tr+tr>td>.boxe{
+    /*height: 26px;*/
+    height: 23px;
+    /*margin-top: -10px;*/
+    /*margin-top: -12px;*/
+}
+
+.box1 {
+    margin-left: 1px;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    line-height: 10px;
+    position: relative;
+    overflow: hidden;
+}
+
+.circleBlue1 {
+    margin-top:10px;
+    margin-top: 0px\9;
+}
+.circleGrey1 {
+    margin-top:12px;
+    margin-top: 0px\9;
+}
+.circleBlue2 {
+    margin-top:-20px\9;
+}
+.circleGrey2 {
+    margin-top:-20px\9;
+}
+
+/*.progress-approve tr>td>div>div.radius {*/
+/*!*position: absolute;*!*/
+/*!*width: 100%;*!*/
+/*!*height: 100%;*!*/
+/*!*border-radius: 50%;*!*/
+/*!*border: 7px dotted;*!*/
+/*!*!* IE7,IE8圆尺寸要小1像素同时有1像素偏移 *!*!*/
+/*!*margin: 0 0 1px 1px;*!*/
+/*!*border-width: 0vw;*!*/
+/*!*margin: 0vw;*!*/
+/*!*color: #999;*!*/
+/*!*background-color: currentColor;*!*/
+/*}*/
+.progress-approve tr+tr>td>div>div.radius {
+    width: 8px;
+    height: 23px;
+    margin-top:0;
+}
+
+.contentLasted {
+    padding-top: 10px;
+}
+
+.circleLasted{
+    color: #199ddb;
+    border: 16px dotted\9;
+    z-index: 1;
+    height: 28px;
+}
+
+.progress-approve tr>td>div.boxLast{
+    width: 16px;
+    height: 16px;
+    /*margin-top: 8px;*/
+    margin-left: -1px;
+    /*margin-left: -2px;*/
+}
+.progress-approve tr+tr>td>div.boxLast {
+    /*background: url("../images/circleBlue2.png") no-repeat;*/
+    width: 16px;
+    height: 36px;
+    /*margin-top: -10px;*/
+}
+
+.print{
+    background: url("../images/iconfont-dayin.png") no-repeat;
+    width: 100px;
+    height: 30px;
+    border: none;
+    outline: none;
+    color: #fff;
+    font-weight: bold;
+    font-family: "Microsoft YaHei UI";
+}
+
+
+/*附件*/
+.detailTab td:nth-child(odd){
+    border-right:1px solid #d2d2d2 ;
+}
+
+.detailTab td:last-child.act{
+    border-right:1px solid #d2d2d2 ;
+    margin-right: -1px;
+    width: inherit!important;
+}
+
+.detailTab tr:first-child td:last-child{
+    border-right: none;
+}
+.detailTab td.in{
+    border-left: 1px solid #d2d2d2;
+}
+.detailTab tr{
+    border:1px solid #d2d2d2 ;
+}

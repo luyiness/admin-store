@@ -1,0 +1,237 @@
+/*确认提示弹窗的样式*/
+.confirmPopup{
+    width: 65%;
+    text-align: center;
+    background: #fff;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+    z-index: 6;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    margin-top: -14rem;
+    margin-left: -32.5%;
+    display: none;
+}
+.confirmP{
+    background: #ffffff;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+    /*z-index: 6;*/
+    z-index: 16;
+    position: fixed;
+    bottom: -0.5rem;
+    display: none;
+}
+.class{
+    color: #555;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 0.6rem;
+}
+.cla{
+    padding-bottom: 0;
+}
+.class p{
+    padding-right: 15px;
+    line-height: 2.5rem;
+}
+.class p input{
+    margin-right: 1.5rem;
+    text-align: center;
+    display: inline-block;
+    width: 27%;
+    border: 1px solid #dddddd;
+    border-radius: 0.3rem;
+    color: rgba(0,0,0,.9);
+}
+.setClass p input{
+    width: 44%;
+}
+.class input.checked{
+    background: #0096e7;
+}
+.class input:last-child{
+    margin-right: 0;
+
+}
+.class p,.class input{
+    font-size: 1rem;
+}
+.class p input.disabled{
+    border-style: dashed;
+}
+.class p:first-child,.buyNum{
+    font-size: 1.1rem;
+    /*padding: 0.3rem 0;*/
+    color: rgba(0,0,0,.9);
+
+}
+.buyNum{
+    font-weight: normal;
+    margin-bottom: 0;
+    display: inline-block;
+    width: 50%;
+    padding-left: .7rem;
+}
+.confirmPopup p:first-child{
+    font-size: 1.1rem;
+    text-align: center;
+    color: rgba(0,0,0,.9);
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.confirmPopup button.sure{
+    width: 30%;
+    background: #0096e7;
+    line-height: 1.8rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 0.3rem;
+    margin: 1.5rem 0;
+    font-size: 1.1rem;
+}
+
+.num{
+    margin: 1rem 0;
+    margin-top: -1.5rem;
+    position: relative;
+    line-height: 3rem;
+}
+.num span{
+    /*margin-right: 1.5rem;*/
+    display: inline-table;
+    width: 42%;
+    text-align: right;
+    height: 2.2rem;
+    line-height: 2.2rem;
+}
+.num input{
+    /*background: #ffffff;*/
+    line-height: 2.2rem;
+    font-size: 1rem;
+    width: 24%;
+    text-align: center;
+    border: none;
+}
+input.dropNum{
+    width: 47%;
+}
+input.sub{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem 0 0 0.5rem;
+}
+input.dropNum{
+    display: inline-block;
+    border: 1px solid #dddddd;
+}
+input.add{
+    display: inline-block;
+    border: 1px solid #dddddd;
+    border-radius: 0 0.5rem 0.5rem 0;
+}
+.colorClass{
+    border-top: 1px solid #dddddd;
+}
+.colorClass p:nth-child(2) span{
+    position: relative;
+    padding-top: 1.3rem;
+}
+.colorClass p:nth-child(2) span i{
+    position: absolute;
+    top:12%;
+    left: 40%;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+}
+button{
+    padding: 0;
+}
+.container{
+    margin-right:0 ;
+    margin-left: 0;
+    padding-left: 0!important;
+    padding-right: 0!important;
+}
+footer.container{
+    width: 100%;
+}
+.classCon{
+    padding:0 15px;
+}
+.imgClass {
+    position: relative;
+    display: inline-block;
+    top: -30px;
+    /*left: 20px;*/
+    width: 75px;
+    height: 70px;
+    border: 1px solid #dddddd;
+    border-radius: 0.5rem;
+
+    background-position: 0px 0px;
+    background-size: 100%;
+}
+.imgClass.class.cla{
+    padding-bottom: 0;
+}
+span.price{
+    display: inline-block;
+    position: relative;
+    /*width: 80px;
+    height: 80px;
+    line-height: 2.5rem;*/
+}
+i{
+    font-style: normal;
+    font-size: 1.1rem;
+}
+i.red{
+    position: inherit;
+    color: red;
+    font-size: 1.2rem;
+    bottom: -3.5rem;
+    left: 6rem;
+}
+.buySure{
+    line-height: 4rem;
+    height: 4rem;
+    width: 100%;
+    font-size: 1.5rem;
+    color: #ffffff;
+}
+input.sureBut{
+    margin-top: -5px;
+    height: 52px;
+    background: #0096e7;
+    width: 100%;
+    border: none;
+    text-align: center;
+    letter-spacing: 0.3rem;
+    font-size: 20px;
+}
+.item {
+    float: left;
+    padding: 4px 0px;
+    background: #eee;
+    border-radius: 25px;
+    -moz-border-radius: 25px;
+    margin-right: 5px;
+    margin-bottom: 3px;
+}
+.item a {
+    padding: 4px 12px;
+    border-radius: 25px;
+    background: none;
+    color: black;
+}
+.item .active {
+    border: 1px solid red;
+    padding: 4px 12px;
+    color: red;
+    border-radius: 25px;
+}

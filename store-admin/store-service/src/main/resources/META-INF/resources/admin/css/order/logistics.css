@@ -1,0 +1,232 @@
+.ColorBlue {
+    color: #0078D7
+}
+.bgLBlue {
+    background: #CEE8F2;
+}
+.mt30 {
+    margin-bottom: 30px;
+}
+.mt40 {
+    margin-bottom: 40px;
+}
+.logis {
+    width: 100%;
+}
+.logisTitle {
+    width: 100%;
+    height: 45px;
+    line-height: 45px;
+}
+.logisTitCont {
+    font-weight: normal;
+    padding-left: 150px;
+    border-bottom: 2px solid #0078D7;
+}
+.logisMain {
+    width: 65%;
+    /*height: 400px;*/
+    margin-left: 190px;
+}
+.orderMain {
+    width: 100%;
+}
+.orderTit {
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.orderInfo {
+    width: 100%;
+}
+.orderInfo table {
+    width: 100%;
+    cellpadding:0;
+    cellspacing:0;
+    border-collapse:collapse;
+}
+.orderInfo table th {
+    border: 1px solid #b7b7b4;
+    font-size: 14px;
+    line-height: 35px;
+}
+.orderInfo table tr {
+    border: 1px solid #eee;
+}
+.orderInfo table td {
+    border: 1px solid #b7b7b4;
+    line-height: 30px;
+    text-align: center;
+    font-size: 13px;
+    word-break: break-all;
+    line-height: initial;
+    padding: 5px;
+}
+.addLogisTit {
+    height: 40px;
+    line-height: 40px;
+    font-weight: 700;
+    font-size: 15px;
+}
+.logisLeft {
+    width: 45%;
+}
+.logisRight {
+    width: 50%;
+    padding-top: 20px;
+}
+.addLogisInfo {
+    width: 45%;
+    border: 2px solid #b7b7b4;
+}
+.logisType,.logisMethods {
+    line-height: 45px;
+    position: relative;
+}
+.logisMethods select {
+    height: 30px;
+    width: 200px;
+}
+.labLeft {
+    display: inline-block;
+    width: 150px;
+    text-align: right;
+    font-size: 14px;
+}
+
+.logisMethods select {
+    height: 28px;
+    width: 200px;
+    position: relative;
+}
+/*.logisType input[type="radio"] {
+    position: absolute;
+    left: -999999px;
+}
+.logisType input:checked+i {
+    border: 1px solid #47a8c0;
+    background-color: #47a8c0;
+}
+.logisType i {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    outline: 0;
+    border-color: #0c4757;
+    margin: 0 5px 0 15px;
+    border-radius: 50%;
+    transition: border-color .3s;
+    border:1px solid #47a8c0;
+    -webkit-transition: border-color .3s;
+    vertical-align: middle;
+
+}*/
+.note {
+    display: inline-block;
+    vertical-align: top;
+}
+.addList {
+    width: 190px;
+    height: 45px;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    background: #5B9BD5;
+    cursor: pointer;
+    border-radius: 5%;
+    margin: 30px auto;
+}
+.back {
+    width: 80px;
+    height: 35px;
+    line-height: 35px;
+    border-radius: 3%;
+    border: 1px solid #b7b7b4;
+    text-align: center;
+    font-size: 13px;
+    margin: 30px 0 40px 50px;
+}
+.logisCode {
+    height: 23px;
+    width: 200px;
+}
+/****************/
+ .radios{
+    position: relative;
+    display: inline-block;
+    font-weight: 400;
+    color: #0c4757;
+    padding-left: 25px;
+    cursor: pointer;
+}
+ .radios input{
+    position: absolute;
+    left: -9999px;
+}
+ .radios i{
+     display: inline-block;
+     width: 12px;
+     height: 12px;
+     outline: 0;
+     border: 1px solid #47a8c0;
+     border-radius: 50%;
+     transition: border-color .3s;
+     -webkit-transition: border-color .3s;
+     margin: 0 5px;
+     vertical-align: middle;
+}
+ .radios span {
+     display: inline-block;
+     vertical-align: middle;
+     font-size: 15px;
+ }
+ .radios input:checked+i{
+    border-color: #0c4757;
+}
+ .radios input+i:after{
+     position: absolute;
+     content: '';
+     top: 22px;
+     left: 34px;
+     width: 6px;
+     height: 6px;
+     border-radius: 50%;
+     background-color: #47a8c0;
+     opacity: 0;
+     transition: opacity .1s;
+     -webkit-transition: opacity .1s;
+}
+ .radios input:checked+i:after {
+    opacity: 1;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member.service.mybatis.mapper.AdminRoleMapper">
+    <resultMap id="roleResultMap" type="admin.model.AdminRole">
+        <id column="id" property="id"></id>
+        <result property="name" column="name"/>
+        <result property="dateCreated" column="date_created"/>
+        <result property="deleteDate" column="delete_date"/>
+        <result property="isDelete" column="is_delete"/>
+        <result property="lastUpdated" column="last_updated"/>
+        <result property="version" column="version"/>
+        <result property="code" column="code"/>
+        <result property="validFlag" column="valid_flag"/>
+        <result property="systemId" column="system_id"/>
+        <collection property="adminMenus" column="id" fetchType="lazy" select="selectMenusByRoleId"/>
+    </resultMap>
+    <select id="selectMenusByRoleId" parameterType="String"
+            resultMap="member.service.mybatis.mapper.AdminMenuMapper.menuResultMap">
+         select m.* from admin_menu m
+        left join admin_role_menus_links rl on m.id = rl.menu_id and m.is_delete = 0
+        left join  admin_role r on r.id = rl.role_id
+        where r.id = #{id}
+    </select>
+
+
+</mapper>

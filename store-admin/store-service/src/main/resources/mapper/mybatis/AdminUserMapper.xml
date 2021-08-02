@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="member.service.mybatis.mapper.AdminUserMapper">
+    <resultMap id="userResultMap" type="admin.model.AdminUser">
+        <id column="id" property="id"></id>
+        <result property="name" column="name"/>
+        <result property="dateCreated" column="date_created"/>
+        <result property="deleteDate" column="delete_date"/>
+        <result property="isDelete" column="is_delete"/>
+        <result property="lastUpdated" column="last_updated"/>
+        <result property="version" column="version"/>
+        <result property="email" column="email"/>
+        <result property="lastLoginIp" column="last_login_ip"/>
+        <result property="lastLoginTime" column="last_login_time"/>
+        <result property="loginErrorCount" column="login_error_count"/>
+        <result property="loginErrorDesc" column="login_error_desc"/>
+        <result property="password" column="password"/>
+        <result property="phone" column="phone"/>
+        <result property="salt" column="salt"/>
+        <result property="state" column="state"/>
+        <result property="username" column="username"/>
+        <result property="validFlag" column="valid_flag"/>
+        <result property="realname" column="realname"/>
+        <result property="systemId" column="system_id"/>
+        <result property="businessModuleId" column="business_module_id"/>
+        <collection property="roles" column="id" fetchType="lazy" select="selectRolesByUserId"/>
+    </resultMap>
+    <select id="selectRolesByUserId" parameterType="String"
+            resultMap="member.service.mybatis.mapper.AdminRoleMapper.roleResultMap">
+         select distinct r.* from admin_role r
+        left join admin_role_links rl on r.id = rl.role_id  and r.is_delete = 0
+        left join  admin_user u on u.id = rl.admin_id
+        where u.id = #{id}
+    </select>
+    <select id="findByUsernameAndSystemCode" resultType="admin.model.AdminUser">
+        select * from admin_user au,admin_system asys
+        where au.system_id=asys.id and au.username=#{username} and asys.system_code=#{system_code}
+    </select>
+    <select id="findByIsDeleteAndRoles" resultType="admin.model.AdminUser">
+        select u.* from admin_user u
+        left join admin_role_links rl on u.id = rl.admin_id
+        left join admin_role r on r.id = rl.role_id
+        where r.id in #{roleids} and r.is_delete = #{isdelete}
+    </select>
+    <select id="getUsernameAndSystemCode" resultMap="member.service.mybatis.mapper.AdminUserMapper.userResultMap">
+        select au.* from admin_user au,admin_system asys
+         where au.system_id=asys.id and au.username= #{username} and asys.system_code=#{system_code}
+         LIMIT 1
+    </select>
+</mapper>

@@ -1,0 +1,42 @@
+body {
+    font-family: microsoft yahei;
+    /*min-height: 100%;
+    box-sizing: border-box;*/
+    margin:0;
+}
+div,ul,li,p,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+a,a:hover {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.clear {
+    *zoom: 1;
+}
+.clear:before,.clear:after {
+    line-height: 0;
+    content: '';
+    clear: both;
+    display: table;
+}
+.fl {
+    float: left;
+}
+.fr {
+    float: right;
+}
+.pricecolor {
+    color: #ff0000;
+}
+.goodsinfo .goodsprice span:first-child {
+    padding-right: 0.1rem;
+}
+.hide{
+    display:none !important
+}
+
+

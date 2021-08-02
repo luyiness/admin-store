@@ -1,0 +1,98 @@
+.coverLayer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 999;
+}
+.wuliuLayer .coverCon {
+    margin: 160px auto;
+    width: 550px;
+    background: #fff;
+    padding-bottom: 30px;
+}
+.wuliuLayer header {
+    background: #029bdf;
+    color: #fff;
+    font-size: 16px;
+    padding: 6px 15px;
+}
+.wuliuLayer .closeTips {
+    cursor: pointer;
+    float: right;
+    font-size: 20px;
+}
+.boxTips {
+    display: table;
+    height: 100px;
+    width: 100%;
+}
+.boxTipsCon {
+    display: table-cell;
+    vertical-align: middle;
+}
+.sureBtnBox {
+    text-align: center;
+}
+.sureBtn {
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    border: 1px solid #029bdf;
+    background: #029bdf;
+    color: #fff;
+    text-align: center;
+    margin-left: 25px;
+    cursor: pointer;
+}
+.sureBtn:active{
+    border: 1px solid #0285c4;
+    background: #0285C4;
+}
+.logisticsProgress {
+    padding: 10px 25px;
+    background: #fafdfe;
+    list-style: none;
+}
+.logisticsProgress>li{
+    font-size: 12px;
+    line-height: 28px;
+}
+.logisticsProgress>li>i{
+    color: #999;
+    font-size: 12px;
+    vertical-align: 1px;
+    position: relative;
+    margin-right: 6px;
+    z-index: 2;
+}
+.logisticsProgress>li+li>i:after{
+    content: "";
+    display: inline-block;
+    border-left: 1px solid #999;
+    height: 25px;
+    position: absolute;
+    top: -18px;
+    left: 5px;
+    z-index: 1;
+}
+.logisticsProgress>li.active{
+    color: #009cde;
+}
+.logisticsProgress>li.active i{
+    color: #009cde;
+    font-size: 16px;
+    margin-right: 4px;
+    margin-left: -2px;
+}
+.contentLMargin{
+    margin-left: 10px;
+}
+.xcConfirm .popBox .txtBox p{
+    line-height: inherit !important;
+    height: 84px !important;
+    overflow-x: hidden !important;
+    overflow-y: auto !important;
+}

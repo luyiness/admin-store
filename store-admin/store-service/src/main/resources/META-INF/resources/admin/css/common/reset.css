@@ -1,0 +1,238 @@
+/*样式格式化*/
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+    margin:0;
+    padding:0;
+}
+table {border-collapse:collapse;border-spacing:0;}
+fieldset,img { border:0;}
+address,caption,cite,code,dfn,em,th,var {font-style:normal;
+    font-weight:normal;}
+ol,ul {list-style:none;}
+caption,th {text-align:left;}
+h1,h2,h3,h4,h5,h6 {font-size:100%;font-weight:normal;}
+q:before,q:after {content:'';}
+abbr,acronym { border:0;}
+a{text-decoration: none;}
+/*样式格式化 end*/
+/*页面样式初步设定*/
+html,body{
+    width: 100%;
+}
+body {
+    min-width: 320px;
+    /*max-width: 640px;*/
+    margin: 0 auto;
+    /*font: 400 12px/1.5 helvetica;*/
+    /*font: 400 12px/1.5 '黑体',helvetica!important;*/
+    font: 400 12px/1.5 'Microsoft YaHei', 'Microsoft YaHei UI', 'WenQuanYi Micro Hei', Arial, sans-serif, \5b8b\4f53;
+    -webkit-font-smoothing:antialiased;
+    /*background: #f7f7f7;*/
+    /*background: #efefef;*/
+    background: #f2f6f7;
+}
+html{
+    /*font-size: inherit!important;*/
+}
+a{
+    -webkit-tap-highlight-color:rgba(0,0,0,0);
+    -webkit-tap-highlight-color: transparent;
+}
+.whiteBg{background-color: #fff;}
+html,body{height:100%;}
+::-webkit-scrollbar {width: 0;}
+.fl{float: left}
+.fr{float: right;}
+.h{overflow: hidden;}
+.mr{margin-right: 0;}
+.clearfix {*zoom: 1; }
+.clearfix:before,
+.clearfix:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+.clearfix:after {
+    clear: both;
+}
+.cl{
+    clear: both;
+}
+input:focus{
+    outline: none;
+}
+a{  text-decoration: none;background: none; color: black}
+i,em{font-style: normal;}
+ul li{list-style: none;}
+.red{
+    color: red;
+}
+.mT{
+    margin-top: 0.5rem;
+}
+.bgC{
+    /*background: #f7f7f7;*/
+    background: #f2f6f7;
+}
+.bgWhite{background: #fff;}
+.grey{
+    /*color: #a7a5a5;*/
+    color: rgb(153, 153, 153);
+}
+.bule{color: blue;}
+.line{
+    height: 1px;
+    color: #cacaca;
+}
+.point{
+    font-size: 1.2rem;
+}
+.padding{
+    padding: 1rem 0.8rem;
+}
+.auto{
+    width: 90%;
+    margin: 0 auto;
+}
+.center{
+    width: 94%;
+    margin: 0 auto;
+}
+.mb_1{
+    margin-bottom: 1rem;
+}
+input,textarea{
+    outline: none;
+}
+.popupBg{
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.5);
+    opacity: 0.5;
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    z-index: 5;
+    display: none;
+}
+.backTop{
+    border: none;
+    background:url("../../images/backTop.png") no-repeat 100%;
+    background-size: 2.5rem;
+    position: fixed;
+    bottom: 5.5rem;
+    right: 1rem;
+    width: 40px;
+    height: 40px;
+    /*-webkit-appearance: none;*/
+}
+.hasError{
+    display: none;
+    position: fixed;
+    top: 40%;
+    /*left: 17.5%;*/
+    left: 5.5%;
+    background: rgba(0,0,0,.6);
+    /*width: 65%;*/
+    width: 85%;
+    margin: 0 auto;
+    color: #fff;
+    z-index: 20;
+    font-size: 1rem;
+    text-align: center;
+    padding: 0.5rem 0.2rem;
+    border-radius: 0.4rem;
+}
+/*公用头部图片样式*/
+.banner{
+    width: 100%;
+}
+.banner img{
+    width: 100%;
+}
+.mrAuto{
+    /*margin: 0 0.5rem;*/
+}
+.green{
+    color:#0DAF4F;
+}
+.blueC{
+    color: #199ddb;
+}
+/*公用头部图片样式 end*/
+/*input的字体的默认输入字体样式的改变*/
+input::-webkit-input-placeholder { /* WebKit browsers */
+    color:#fff;
+}
+input:-moz-placeholder { /* Mozilla Firefox 4 to 18 */
+    color:#b2b2b2;
+}
+input::-moz-placeholder { /* Mozilla Firefox 19+ */
+    color:#b2b2b2;
+}
+input:-ms-input-placeholder { /* Internet Explorer 10+ */
+    color:#b2b2b2;
+}
+
+/*立即充值*/
+.salePrice{
+    font-size: 1.3rem;
+    text-align: center;
+    color: #666;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+.salePrice em{
+    font-size: 0.6rem;
+}
+.rechargeBtn {
+    /*width: 11rem;*/
+    width: 90%;
+    line-height: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 1.5rem;
+    color: #fff;
+    /*background: #0DAF4F;*/
+    background: #7fc65c;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    margin-bottom: 6rem;
+}
+.disabledBtn{
+    background: gray!important;
+}
+.rechargeFooter {
+    line-height: 1.15rem;
+    margin-top: 0.5rem;
+    padding: 1rem 0;
+    margin-bottom: 2rem;
+    color: rgb(153, 153, 153);
+    font-size: 1rem;
+}
+.rechargeFooter em{
+    color: #0f75bb;
+    font-size: 0.9rem;
+}
+.pointT{
+    color: rgb(25, 157, 219);
+    font-size: 1.2rem;
+    /*height: 2rem;*/
+    margin-bottom: 0.5rem;
+}
+.pointT i{
+    display: inline-block;
+    vertical-align: middle;
+}
+.pointT i:first-child{
+    background: url(../../myScore/images/point.png) no-repeat 100%;
+    background-size: 100%;
+    background-position: 0px 0px;
+    width: 1.3rem;
+     height: 1.3rem;
+    /*vertical-align: top;*/
+}
+/*页面样式初步设定end*/
+
+

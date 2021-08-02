@@ -1,0 +1,391 @@
+.bodyBg {
+    background: #f7f7f7;
+    width: 100%;
+    height: 100%;
+}
+
+.queryBar {
+    width: 100%;
+    height: 54px;
+    line-height: 54px;
+    background: #f2f2f2;
+    margin: 18px auto;
+}
+
+.datePicker {
+    position: relative;
+}
+
+.datePicker input {
+    height: 27px;
+    line-height: 27px;
+    width: 100px;
+    border: 1px solid #e5e5e5;
+    cursor: pointer;
+    font-size: 12px;
+    text-indent: 0.5em;
+}
+
+.datePicker .dateIcon {
+    position: absolute;
+    top: 0px;
+    right: 4px;
+}
+
+.timeRange {
+    height: 54px;
+    line-height: 54px;
+    width: 45%;
+}
+
+.timeRange label {
+    font-weight: normal;
+}
+
+.timeRange .recentDate {
+    color: #009cde;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.across {
+    margin: 0 6px;
+}
+
+.orderRange {
+    height: 54px;
+    line-height: 54px;
+    text-align: right;
+    width: 55%;
+}
+
+.orderRange label {
+    font-weight: normal;
+}
+
+.orderRange .beautySelect {
+    margin-right: 7px;
+}
+
+.orderRange .beautySelect input {
+    width: 100px;
+    height: 27px;
+    line-height: 27px;
+}
+
+.orderRange .beautySelect .dropdown-menu {
+    top: 25px;
+}
+
+.orderRange .searchBtn {
+    background: #ff8a00;
+    height: 27px;
+    line-height: 27px;
+    width: 100px;
+    color: #fff;
+    border: 0;
+    outline: 0;
+    letter-spacing: 1em;
+    text-indent: 1em;
+    margin-left: 25px;
+    font-size: 14px;
+    vertical-align: middle;
+}
+
+.dateTable {
+    width: 100%;
+}
+
+.dateTable caption {
+    color: #333;
+    position: relative;
+    padding-left: 26px;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.dateTable caption:before {
+    position: absolute;
+    content: "";
+    display: block;
+    border-left: 4px solid #009cde;
+    height: 15px;
+    top: 5px;
+    left: 18px;
+}
+
+.dateTable th {
+    height: 36px;
+    line-height: 36px;
+    background: #009cde;
+    text-align: center;
+    color: #fff;
+    width: 20%;
+    text-indent: -15px;
+}
+
+.dateTable td {
+    border: 0;
+    height: 34px;
+    line-height: 34px;
+    text-align: center;
+    font-size: 12px;
+    width: 20%;
+    color: #666666;
+}
+
+.dateCon {
+    height: 378px;
+    overflow: auto;
+}
+
+.dateTab {
+    list-style: none;
+    background: #009cde;
+    height: 36px;
+    line-height: 36px;
+    margin-top: 42px;
+}
+
+.dateTab li {
+    float: left;
+    width: 25%;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+.dateTab li.active {
+    background: #7dc855;
+}
+
+#main {
+    height: 378px;
+    padding-top: 10px;
+    background: #fdfdfd !important;
+}
+
+.changeDetails {
+    margin-top: 18px;
+}
+
+.detailsTable th {
+    width: auto;
+    text-align: center;
+    text-indent: 0;
+}
+
+.detailsTable td {
+    width: auto;
+    text-align: center;
+}
+
+.detailsTable a {
+    color: #ff8a00;
+}
+
+.detailsCon {
+    height: 340px;
+    overflow: scroll;
+    overflow-x: hidden;
+    margin-bottom: 36px;
+}
+
+.width-4em {
+    width: 4em !important;
+    overflow: hidden;
+}
+
+.width-5em {
+    width: 5em !important;
+    overflow: hidden;
+}
+
+.width-6em {
+    width: 6em !important;
+    overflow: hidden;
+}
+
+.width-8em {
+    width: 8em !important;
+    overflow: hidden;
+}
+
+.width-10em {
+    width: 10em !important;
+    overflow: hidden;
+}
+
+.tableHead {
+    padding-right: 15px;
+    background: #009cde;
+}
+
+.caption {
+    color: #333;
+    position: relative;
+    padding-left: 26px;
+    font-size: 16px;
+    margin-bottom: 18px;
+}
+
+.caption:before {
+    position: absolute;
+    content: "";
+    display: block;
+    border-left: 4px solid #009cde;
+    height: 15px;
+    top: 5px;
+    left: 18px;
+}
+.bannerBg{
+    background: url("../image/banner.png");
+    height: 200px;
+}
+.detailsTitle{
+    padding-left: 8px;
+    margin-top: 20px;
+    color: #009cde;
+    font-weight: bold;
+    font-size: 17px;
+}
+.detailsTitle:before {
+    left: 0px;
+    height: 17px;
+}
+.detailsContent {
+    padding: 10px 110px;
+    border: 1px solid #dcdcdc;
+    border-top: 4px solid #dcdcdc;
+    margin-bottom: 36px;
+}
+.tableTitle{
+    margin: 28px auto 10px;
+    font-size: 12px;
+    font-weight: bold;
+}
+.infoTable{
+    width: 100%;
+}
+.infoTable th,.infoTable td{
+    height: 27px;
+    line-height: 27px;
+    text-indent: 4em;
+    border: 1px solid #d2d2d2;
+    font-size: 12px;
+}
+.infoTable th{
+    background:#e8f5fb
+}
+.productInfo{
+    font-size: 12px;
+}
+.infoTitle{
+    height: 27px;
+    line-height: 27px;
+    padding: 0 18px;
+    background: #eeeeee;
+}
+.infoTitle>i{
+    color: #009cde;
+}
+.infoTitle>span{
+    float: right;
+}
+.infoTitle .sendAddress{
+    margin-left: 30px;
+}
+.proImgBox{
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    border: 1px solid #d2d2d2;
+}
+.proImgBox img{
+    display: block;
+    width: 100%;
+}
+.productInfoList{
+    padding: 6px 0;
+    text-align: center;
+    margin: 0;
+}
+.productInfoList>div{
+    height: 60px;
+    line-height: 60px;
+    padding: 0;
+}
+.productInfoList .productName{
+    display: table;
+}
+.productName span{
+    display: table-cell;
+    vertical-align: middle;
+}
+.applyService{
+    cursor: pointer;
+    color: #ff8a00;
+}
+.productInfoList+.productInfoList{
+    border-top: 1px dashed #d2d2d2;
+}
+.productInfo{
+    border: 1px solid #d2d2d2;
+}
+.productInfo+.productInfo{
+    border-top: 0;
+}
+.logisticsProgress {
+    padding: 10px 25px;
+    background: #fafdfe;
+}
+.logisticsProgress>li{
+    font-size: 12px;
+    line-height: 28px;
+}
+.logisticsProgress>li>i{
+    color: #999;
+    font-size: 12px;
+    vertical-align: 1px;
+    position: relative;
+    margin-right: 6px;
+    z-index: 2;
+}
+.logisticsProgress>li+li>i:before{
+    content: '';
+    display: inline-block;
+    border-left: 1px solid #999;
+    height: 25px;
+    position: absolute;
+    top: -18px;
+    left: 5px;
+    z-index: 1;
+}
+.logisticsProgress>li.active{
+    color: #009cde;
+}
+.logisticsProgress>li.active i{
+    color: #009cde;
+    font-size: 16px;
+    margin-right: 4px;
+    margin-left: -2px;
+}
+.backBtn{
+    height: 90px;
+    line-height: 90px;
+    text-align: center;
+}
+.backBtn span{
+    cursor: pointer;
+    color: #fff;
+    background: #ff8a00;
+    display: inline-block;
+    width: 90px;
+    height: 27px;
+    line-height: 27px;
+    letter-spacing: 1em;
+    text-indent:1em;
+}
+.backBtn span:active{
+    background: #eb7900;
+}

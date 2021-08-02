@@ -1,0 +1,338 @@
+/*公用样式*/
+.blue{
+    color: #199eda;
+}
+.red{
+    color: red;
+}
+.rel{
+    position: relative;
+}
+.ab{
+    position: absolute;
+}
+.or{
+    color: orange;
+}
+.f-hide {
+    display: none;
+}
+/*公用样式 end*/
+.boxC{
+
+}
+.infoC {
+    /*width: 90%;*/
+    background: #ffffff;
+    padding: 15px;
+}
+.infoTop{
+    background: #f5ffef;
+    border: 1px solid #f5ffef;
+    padding:10px 5px;
+    margin-bottom: 15px;
+    overflow: hidden;
+}
+.infoTop span,.infoTop em{
+    display: inline-block;
+    vertical-align: middle;
+    height: 35px;
+    line-height: 35px;
+    font-size: 14px;
+}
+.reChoice{
+    color: #fff;
+    background-color: #199eda;
+    font-size: 13px;
+    width: 120px;
+    display: inline-block;
+    height: 35px;
+    line-height: 35px;
+    text-align: center;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    cursor: pointer;
+}
+.infoList{
+    margin-bottom: 15px;
+    border: 1px solid #cacaca;
+}
+.infoTit{
+    background: gainsboro;
+    color: #333;
+    padding: 5px 10px;
+}
+.infoTip{
+    background: #eefaff;
+    border: 1px solid #eefaff;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    margin: 10px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0 10px;
+    font-size: 12px;
+}
+.infoListDetils{
+
+}
+.infoListDetils  .detilsList{
+    margin-bottom: 15px;
+}
+.infoListDetils label,.infoListDetils input{
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.infoListDetils label{
+    width: 20%;
+    margin-right: 20px;
+    text-align: right;
+    margin-bottom: 0;
+    font-weight: normal;
+}
+.imgC,.proRuleList,.proDetils{
+    display: inline-block;
+    vertical-align: middle;
+}
+.imgList{
+    margin-top: 15px;
+}
+.infoListDetils input[type=text],.infoListDetils select,.infoListDetils textarea,.imgC,.proRuleList,.drop-wrapper{
+    width: 45%;
+    height:36px;
+    line-height: 36px;
+    padding: 0 .5em;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+}
+.infoListDetils select{
+    width: 45%;
+}
+.proDetils{
+    width: 45%;
+    vertical-align: top;
+}
+.infoListDetils textarea{
+    height: 100px;
+    vertical-align: top;
+}
+.proRuleList{
+    height: auto;
+    border: none;
+    padding: 0;
+    width: 45.999%;
+}
+.proRuleList input{
+    width: 100%;
+    border: none;
+}
+.icon-xialajiantou, .icon-xialajiantou-copy{
+    right: 4%;
+    top: -6%;
+}
+
+.icon-xialajiantou:before {
+    content: "\e628";
+}
+.icon-xialajiantou-copy:before {
+    content: "\e7e0";
+}
+.drop-list {
+    display: none;
+    width: 100%;
+    position: absolute;
+    z-index: 99;
+    background: #ffffff;
+    border: 1px solid #eee;
+    padding-left: 8px;
+    overflow-y: scroll;
+    margin-top: 0px;
+    height: 200px;
+}
+.drop-wrapper .drop-list a {
+    display: block;
+    font-size: 14px;
+    padding: 5px;
+    color: #333333;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+/*上传附件*/
+.file-upload-content {
+    /*margin-top: 20px;*/
+    padding: 0 10px;
+    display: inline-block;
+    vertical-align: middle;
+    width: 100%;
+    padding-left: 0;
+}
+.fileupload {
+    display: block;
+    width: 380px;
+    float: left;
+    height: 36px;
+    margin: 0 5px 5px 5px;
+}
+.fileupload .fileinput-button {
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    width: 90px;
+    background: #009cde;
+    text-align: center;
+    color: #fff;
+    margin: 0;
+    cursor: pointer;
+}
+.fileupload .fileinput-name {
+    display: block;
+    height: 36px;
+    line-height: 36px;
+    float: left;
+    border: 1px solid #e5e5e5;
+    border-left: none;
+    width: 237px;
+    max-width: 237px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    cursor: pointer;
+}
+.del-fileinput-button ,.del-proinput-button{
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    width: 30px !important;
+    background: #009cde;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+}
+.fileupload-input {
+    position: relative;
+    top: -32px;
+    z-index: 998;
+    cursor: pointer;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.add-fileinput-button ,.add-proinput-button{
+    display: block;
+    float: left;
+    height: 36px;
+    line-height: 36px;
+    width: 30px !important;
+    background: #009cde;
+    text-align: center;
+    color: #fff;
+    cursor: pointer;
+    /*margin-left: 36px;*/
+}
+/*上传附件 end*/
+
+
+.coverLayer {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    background: url(../../images/opcityBg.png);
+    z-index: 999;
+}
+.reprotLayer, .reprotResultLayer {
+    position: absolute;
+    width: 470px;
+    /* height: 245px; */
+    padding-bottom: 15px;
+    top: 35%;
+    left: 34.5%;
+    background-color: #fff;
+}
+.receiverTitle {
+    color: #fff;
+    background-color: #199eda;
+    height: 40px;
+    padding-left: 10px;
+    padding-top: 12px;
+}
+.receiverTitle .closeBtn {
+    float: right;
+    position: absolute;
+    top: 12px;
+    right: 8px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.reprotInfo, .reprotResultInfo {
+    padding: 20px 30px;
+}
+.reprotInfoC {
+    text-align: center;
+}
+.failList:last-child {
+    margin-bottom: 0;
+}
+.resultSureBtn {
+    cursor: pointer;
+    width: 120px;
+    line-height: 35px;
+    background: #199eda;
+    color: #fff;
+    margin: 20px auto;
+    text-align: center;
+}
+.resultBtnC {
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+}
+.resultBtnC span.sureEditBtn {
+    background: #199eda;
+}
+.resultBtnC span {
+    display: inline-block;
+    vertical-align: middle;
+    color: #fff;
+    cursor: pointer;
+    width: 120px;
+    line-height: 35px;
+    text-align: center;
+    margin-right: 30px;
+}
+.resultBtnC span.sureEditBtn {
+    background: #199eda;
+}
+.resultBtnC span.cancelEditBtn {
+    background: #b7b7b7;
+}
+input[type=checkbox], input[type=radio]{
+    margin: 0!important;
+}
+#goodsTableDiv{
+    padding: 5px 0 15px 0;
+}
+#goodsTable{
+    width: 75%;
+    margin: 0 auto;
+    text-align: center;
+}
+#goodsTable th{
+    text-align: center;
+    background: #199eda;
+    color: #fff;
+    line-height: 30px;
+    height: 30px;
+    padding: 5px;
+    border: 1px solid #199eda;
+}
+#goodsTable td{
+    height: 30px;
+    line-height: 30px;
+    padding: 5px;
+}

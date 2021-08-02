@@ -1,0 +1,114 @@
+/* reset */
+html, body, h1, h2, h3, h4, h5, h6, div, dl, dt, dd, ul, ol, li, p, blockquote, pre, hr, figure, table, caption, th, td, form, fieldset, legend, input, button, textarea, menu {
+    margin: 0;
+    padding: 0;
+}
+
+header, footer, section, article, aside, nav, hgroup, address, figure, figcaption, menu, details, summary, picture {
+    display: block;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+td {
+    border: 1px solid #b3b3b3;
+}
+
+caption, th {
+    text-align: left;
+    font-weight: normal;
+}
+
+html, body, img, iframe, abbr {
+    border: 0;
+}
+
+i, em {
+    font-style: normal;
+}
+
+[hidefocus], summary {
+    outline: 0;
+}
+
+li {
+    list-style: none;
+}
+
+sup, sub {
+    font-size: 12px;
+}
+
+textarea {
+    overflow: auto;
+    resize: none;
+}
+
+label {
+    cursor: default;
+    font-weight: normal;
+}
+
+a, button {
+    cursor: pointer;
+}
+
+h1, h2, h3, h4, h5, h6, b {
+    font-weight: normal;
+    display: block;
+}
+
+a, a:hover {
+    text-decoration: none;
+    color: #333;
+}
+a, a:hover,a:focus,a:active{
+    text-decoration: none;
+
+}
+a {
+    color: #333;
+}
+body, textarea, input, button, select, keygen, legend {
+    font: 14px/1.5 'Microsoft YaHei', 'Microsoft YaHei UI', 'WenQuanYi Micro Hei', Arial, sans-serif, \5b8b\4f53;
+    color: #333;
+    outline: 0;
+}
+html {
+    font-size: 10px;
+}
+body {
+    background: #fff;
+    -webkit-transition: none !important;
+    -moz-transition: none !important;
+    -ms-transition: none !important;
+    -o-transition: none !important;
+}
+input[type=submit] {
+    cursor: pointer;
+}
+.fl {
+    float: left;
+}
+
+.fr {
+    float: right;
+}
+
+.clearfix, .clear {
+    *zoom: 1;
+}
+
+.clearfix:before, .clearfix:after, .clear:before, .clear:after {
+    display: table;
+    line-height: 0;
+    content: "";
+}
+
+.clearfix:after, .clear:after {
+    clear: both;
+}
+/* reset end*/
