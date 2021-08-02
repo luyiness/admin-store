@@ -1,0 +1,388 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>sinomall-parent-pom</groupId>
+    <artifactId>parent-pom</artifactId>
+    <version>2.0</version>
+    <packaging>pom</packaging>
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>1.4.1.RELEASE</version>
+    </parent>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <project.build.resourceEncoding>UTF-8</project.build.resourceEncoding>
+
+        <!-- default bytecode version for src/main -->
+        <main.java.version>1.8</main.java.version>
+        <main.signature.artifact>java18</main.signature.artifact>
+
+        <!-- default bytecode version for src/test -->
+        <maven.compiler.source>1.8</maven.compiler.source>
+        <maven.compiler.target>1.8</maven.compiler.target>
+
+        <java.version>1.8</java.version>
+        <jdk.version>1.8</jdk.version>
+        <shiro.version>1.2.4</shiro.version>
+
+        <guava.version>20.0</guava.version>
+        <commons-lang3.version>3.3.2</commons-lang3.version>
+        <druid.version>1.0.27</druid.version>
+        <version.compiler-plugin>3.1</version.compiler-plugin>
+        <version.source-plugin>2.3</version.source-plugin>
+        <version.javadoc-plugin>2.9.1</version.javadoc-plugin>
+
+        <!--<druid.version>1.0.13</druid.version>
+        <poi.version>3.14</poi.version>-->
+        <cxf.version>3.1.10</cxf.version>
+
+        <springboot.version>1.4.1.RELEASE</springboot.version>
+
+        <spring.admin.version>1.5.5</spring.admin.version>
+        <orika.version>1.5.1</orika.version>
+        <poi.version>3.17</poi.version>
+        <!-- 8.5.0 - 8.5.27 版本有安全问题，升级为以下版本 -->
+        <tomcat.version>8.5.28</tomcat.version>
+        <brave.version>5.0.0</brave.version>
+
+        <spring-cloud.version>Dalston.RELEASE</spring-cloud.version>
+
+        <!--项目拷贝参数方便升级更新版本-->
+        <!--开启拷贝jar输出，开关，可切换-->
+        <project.copy.outPut.switch>package</project.copy.outPut.switch>
+        <!--关闭拷贝jar输出，开关，可切换-->
+        <!--<project.copy.outPut.switch>none</project.copy.outPut.switch>-->
+        <!--积分项目jar输出  可切换-->
+        <!-- B2B start -->
+        <!-- 直购 -->
+        <project.copy.outPutB2BDirectPath>D:\install\20190808\projects\jars\B2B\direct\${project.parent.artifactId}\
+        </project.copy.outPutB2BDirectPath>
+        <!-- 工会 -->
+        <project.copy.outPutB2BGiftPath>D:\install\20190808\projects\jars\B2B\gift\${project.parent.artifactId}\
+        </project.copy.outPutB2BGiftPath>
+        <!-- 竞价 -->
+        <project.copy.outPutB2BBiddingPath>D:\install\20190808\projects\jars\B2B\bidding\${project.parent.artifactId}\
+        </project.copy.outPutB2BBiddingPath>
+        <!-- 协议 -->
+        <project.copy.outPutB2BProtocolPath>D:\install\20190808\projects\jars\B2B\protocol\${project.parent.artifactId}\
+        </project.copy.outPutB2BProtocolPath>
+        <!-- B2B公用前台 -->
+        <project.copy.outPutB2BCommonWebPath>D:\install\20190808\projects\jars\B2B\commonweb\${project.parent.artifactId}\
+        </project.copy.outPutB2BCommonWebPath>
+        <!-- B2B公用服务 -->
+        <project.copy.outPutB2BCommonServicePath>D:\install\20190808\projects\jars\B2B\commonservice\${project.parent.artifactId}\
+        </project.copy.outPutB2BCommonServicePath>
+        <!-- B2B end -->
+        <!-- B2C start -->
+        <!-- 内勤 -->
+        <project.copy.outPutB2CNeiQinPath>D:\install\20190808\projects\jars\B2C\neiqin\${project.parent.artifactId}\
+        </project.copy.outPutB2CNeiQinPath>
+        <!-- 福利通 -->
+        <project.copy.outPutB2CWelfareMallPath>D:\install\20190808\projects\jars\B2C\welfareMall\${project.parent.artifactId}\
+        </project.copy.outPutB2CWelfareMallPath>
+        <!-- 小程序 -->
+        <project.copy.outPutB2WxChoicePath>D:\install\20190808\projects\jars\B2C\wxchoice\${project.parent.artifactId}\
+        </project.copy.outPutB2WxChoicePath>
+        <!-- 诚通 -->
+        <project.copy.outPutB2CCtMallPath>D:\install\20190808\projects\jars\B2C\ctMall\${project.parent.artifactId}\
+        </project.copy.outPutB2CCtMallPath>
+        <!-- itaiping -->
+        <project.copy.outPutB2CItaipingMallPath>D:\install\20190808\projects\jars\B2C\itaipingMall\${project.parent.artifactId}\
+        </project.copy.outPutB2CItaipingMallPath>
+        <!-- B2C公用前台 -->
+        <project.copy.outPutB2CCommonWebPath>D:\install\20190808\projects\jars\B2C\commonweb\${project.parent.artifactId}\
+        </project.copy.outPutB2CCommonWebPath>
+        <!-- B2C公用服务 -->
+        <project.copy.outPutB2CCommonServicePath>D:\install\20190808\projects\jars\B2C\commonservice\${project.parent.artifactId}\
+        </project.copy.outPutB2CCommonServicePath>
+        <!-- B2C end -->
+
+        <!-- 优惠券平台 start -->
+        <project.copy.outPutMarketingPath>D:\install\20190808\projects\jars\marketing\platform\${project.parent.artifactId}\
+        </project.copy.outPutMarketingPath>
+        <!-- 优惠券平台 end -->
+
+        <!-- 发票平台 start -->
+        <project.copy.outPutInvoicePath>D:\install\20190808\projects\jars\service\invoice\${project.parent.artifactId}\
+        </project.copy.outPutInvoicePath>
+        <!-- 发票平台 end -->
+
+        <!-- 供应商 start -->
+        <!-- 客户端 -->
+        <project.copy.outPutSupplierSupplierClientPath>D:\install\20190808\projects\jars\supplier\client\${project.parent.artifactId}\
+        </project.copy.outPutSupplierSupplierClientPath>
+        <!-- 客户端和服务端 -->
+        <project.copy.outPutSupplierSupplierServerClientPath>
+            D:\install\20190808\projects\jars\supplier\clandser\${project.parent.artifactId}\
+        </project.copy.outPutSupplierSupplierServerClientPath>
+        <!-- 服务端 -->
+        <project.copy.outPutSupplierSupplierServerPath>D:\install\20190808\projects\jars\supplier\server\${project.parent.artifactId}\
+        </project.copy.outPutSupplierSupplierServerPath>
+        <!-- 充值 -->
+        <project.copy.outPutSupplierSupplierRechargePath>
+            D:\install\20190808\projects\jars\supplier\recharge\${project.parent.artifactId}\
+        </project.copy.outPutSupplierSupplierRechargePath>
+        <!-- 卖家 -->
+        <project.copy.outPutSupplierSupplierShopsPath>D:\install\20190808\projects\jars\supplier\shops\${project.parent.artifactId}\
+        </project.copy.outPutSupplierSupplierShopsPath>
+        <!-- 供应商 end -->
+
+        <!-- 核心服务 start -->
+        <!-- 核心底层服务 -->
+        <project.copy.outPutCoreServicePath>D:\install\20190808\projects\jars\core\service\${project.parent.artifactId}\
+        </project.copy.outPutCoreServicePath>
+        <!-- 核心web服务 -->
+        <project.copy.outPutCoreWebPath>D:\install\20190808\projects\jars\core\web\${project.parent.artifactId}\
+        </project.copy.outPutCoreWebPath>
+        <!-- 核心平台服务 -->
+        <project.copy.outPutCorePlatformPath>D:\install\20190808\projects\jars\core\platform\${project.parent.artifactId}\
+        </project.copy.outPutCorePlatformPath>
+
+        <!-- 核心公用服务 -->
+        <project.copy.outPutCoreCommonPath>D:\install\20190808\projects\jars\core\common\${project.parent.artifactId}\
+        </project.copy.outPutCoreCommonPath>
+        <!-- 核心服务 end -->
+
+        <!-- 售后服务 start -->
+        <!-- 售后服务 -->
+        <project.copy.outPutServiceAfterSalePath>D:\install\20190808\projects\jars\service\aftersale\${project.parent.artifactId}\
+        </project.copy.outPutServiceAfterSalePath>
+        <!-- 物流服务 -->
+        <project.copy.outPutServiceLogisticsPath>D:\install\20190808\projects\jars\service\logistics\${project.parent.artifactId}\
+        </project.copy.outPutServiceLogisticsPath>
+        <!-- 财务平台平台服务 -->
+        <project.copy.outPutServiceFinancePath>D:\install\20190808\projects\jars\service\finance\${project.parent.artifactId}\
+        </project.copy.outPutServiceFinancePath>
+
+        <!-- 管理后台 -->
+        <project.copy.outPutServiceManagePath>D:\install\20190808\projects\jars\service\manage\${project.parent.artifactId}\
+        </project.copy.outPutServiceManagePath>
+        <!-- 售后服务 end -->
+
+        <!-- 工具类 start -->
+        <project.copy.outPutToolsPath>D:\install\20190808\projects\jars\tools\business\${project.parent.artifactId}\
+        </project.copy.outPutToolsPath>
+        <!-- 工具类 end -->
+
+        <!-- 监控类型服务 start -->
+        <project.copy.outPutMonitorPath>D:\install\20190808\projects\jars\monitor\business\${project.parent.artifactId}\
+        </project.copy.outPutMonitorPath>
+        <!-- 监控类型服务 end -->
+
+        <!-- 跑批服务 start -->
+        <project.copy.outPutRunBatchPath>D:\install\20190808\projects\jars\batchrun\business\${project.parent.artifactId}\
+        </project.copy.outPutRunBatchPath>
+        <!-- 跑批服务 end -->
+
+
+        <!--项目jar源-->
+        <project.copy.inPutPath>${project.basedir}/target/</project.copy.inPutPath>
+        <project.copy.Target>${project.artifactId}-${project.version}.jar</project.copy.Target>
+
+
+        <!--使用maven wagon打包并上传服务器启动项目-->
+        <!--配置远程生产88服务器url-->
+        <!--<wagon.remote.service.88url>scp://10.4.233.88</wagon.remote.service.88url>-->
+        <!--配置远程uat46服务器url-->
+        <wagon.remote.server.88url>scp://10.1.118.46</wagon.remote.server.88url>
+        <!--maven setting.xml 服务id-->
+        <wagon.server.88id>jicai-score-88server</wagon.server.88id>
+        <!--开启88打包上传jar，并执行相应命令，开关，可切换-->
+        <!--<wagon.remote.service.88switch>package</wagon.remote.service.88switch>-->
+        <!--关闭88打包上传jar,开关，可切换-->
+        <!--<wagon.remote.service.88switch>none</wagon.remote.service.88switch>-->
+        <!--配置远程155服务器url-->
+        <wagon.remote.server.155url>scp://10.4.233.155</wagon.remote.server.155url>
+        <!--配置远程uat47服务器url-->
+        <!--<wagon.remote.service.155url>scp://10.1.118.47</wagon.remote.service.155url>-->
+        <wagon.server.155id>jicai-score-155server</wagon.server.155id>
+        <!--开启155打包上传jar，并执行相应命令，开关，可切换-->
+        <!--<wagon.remote.service.155switch>package</wagon.remote.service.155switch>-->
+        <!--关闭155打包上传jar,开关，可切换-->
+        <!--<wagon.remote.service.155switch>none</wagon.remote.service.155switch>-->
+        <!--配置远程服务器应用基础路径-->
+        <wagon.remote.server.base.path>/tpsys/applications/jicai-score/projects</wagon.remote.server.base.path>
+        <!--配置远程服务器service 服务jar上传路径-->
+        <wagon.remote.server.jar.servicePath>${wagon.remote.server.base.path}/service/${project.parent.artifactId}
+        </wagon.remote.server.jar.servicePath>
+        <!--配置远程服务器admin 服务jar上传路径-->
+        <wagon.remote.server.jar.adminPath>${wagon.remote.server.base.path}/admin/${project.parent.artifactId}
+        </wagon.remote.server.jar.adminPath>
+        <!--配置远程服务器集采web 前端jar上传路径-->
+        <wagon.remote.server.jar.jicaiWebPath>${wagon.remote.server.base.path}/jicai-web/${project.parent.artifactId}
+        </wagon.remote.server.jar.jicaiWebPath>
+        <!--配置远程服务器积分web前端jar上传路径-->
+        <wagon.remote.server.jar.scoreWebPath>${wagon.remote.server.base.path}/score-web/${project.parent.artifactId}
+        </wagon.remote.server.jar.scoreWebPath>
+        <!--配置远程服务器定时器ar上传路径-->
+        <wagon.remote.server.jar.timerPath>${wagon.remote.server.base.path}/timer/${project.parent.artifactId}
+        </wagon.remote.server.jar.timerPath>
+
+        <!--配置目标上传jar-->
+        <wagon.target.fromFile>target/${project.artifactId}-${project.version}.jar</wagon.target.fromFile>
+
+        <!--配置sh脚本路径-->
+        <wagon.commod.base.shFilePath>/tpsys/applications/jicai-score/shell</wagon.commod.base.shFilePath>
+        <wagon.commod.admin.shFilePath>${wagon.commod.base.shFilePath}/admin-shell</wagon.commod.admin.shFilePath>
+        <wagon.commod.jicai-web.shFilePath>${wagon.commod.base.shFilePath}/jicai-web-shell
+        </wagon.commod.jicai-web.shFilePath>
+        <wagon.commod.score-web.shFilePath>${wagon.commod.base.shFilePath}/score-web-shell
+        </wagon.commod.score-web.shFilePath>
+        <wagon.commod.service.shFilePath>${wagon.commod.base.shFilePath}/service-shell</wagon.commod.service.shFilePath>
+        <wagon.commod.timer.shFilePath>${wagon.commod.base.shFilePath}/timer-shell</wagon.commod.timer.shFilePath>
+        <!--多服务器之间自动同步jar脚本 -->
+        <wagon.jar>${project.artifactId}-${project.version}.jar</wagon.jar>
+        <wagon.commod.scp.scp_remote_file>${wagon.commod.base.shFilePath}/scp-shell/scp_file_remote.sh
+        </wagon.commod.scp.scp_remote_file>
+        <!--积分项目web打包开关-->
+        <!--<pakage.skip.scoreWeb.switch>package</pakage.skip.scoreWeb.switch>-->
+        <pakage.skip.scoreWeb.switch>none</pakage.skip.scoreWeb.switch>
+        <!--集采项目web打包开关-->
+        <!--<pakage.skip.jicaiWeb.switch>package</pakage.skip.jicaiWeb.switch>-->
+        <pakage.skip.jicaiWeb.switch>none</pakage.skip.jicaiWeb.switch>
+        <!--服务打包开关-->
+        <!--<pakage.skip.service.switch>package</pakage.skip.service.switch>-->
+        <pakage.skip.service.switch>none</pakage.skip.service.switch>
+        <!--admin打包开关-->
+        <!--<pakage.skip.admin.switch>package</pakage.skip.admin.switch>-->
+        <pakage.skip.admin.switch>none</pakage.skip.admin.switch>
+        <!--timer打包开关-->
+        <!--<pakage.skip.timer.switch>package</pakage.skip.timer.switch>-->
+        <pakage.skip.timer.switch>none</pakage.skip.timer.switch>
+        <jackson.version>2.8.11</jackson.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <artifactId>thirdParty-version</artifactId>
+                <groupId>version-control</groupId>
+                <version>2.0</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.springframework.cloud</groupId>
+                <artifactId>spring-cloud-dependencies</artifactId>
+                <version>${spring-cloud.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+
+    <distributionManagement>
+        <repository>
+            <id>tpdeployment</id>
+            <url>http://10.29.36.2:8081/repository/maven-releases/</url>
+        </repository>
+        <snapshotRepository>
+            <id>tpdeployment</id>
+            <url>http://10.29.36.2:8081/repository/maven-snapshots/</url>
+        </snapshotRepository>
+    </distributionManagement>
+    <repositories>
+        <repository>
+            <id>maven-public</id>
+            <url>http://10.29.36.2:8081/repository/maven-public/</url>
+        </repository>
+        <repository>
+            <id>nexusgz</id>
+            <url>http://dev.sinosoftgz.com:5531/nexus/content/groups/public/</url>
+        </repository>
+        <repository>
+            <id>codelds</id>
+            <url>https://code.lds.org/nexus/content/groups/main-repo</url>
+        </repository>
+        <!--       <repository>
+                   <id>local</id>
+                   <url>http://localhost:8082/repository/local/</url>
+               </repository>-->
+    </repositories>
+
+
+    <build>
+        <extensions>
+            <extension>
+                <groupId>org.apache.maven.wagon</groupId>
+                <artifactId>wagon-ssh</artifactId>
+                <version>2.8</version>
+            </extension>
+        </extensions>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.5.1</version>
+                <configuration>
+                    <source>${jdk.version}</source>
+                    <target>${jdk.version}</target>
+                    <!--  <fork>true</fork>
+                      <meminitial>512m</meminitial>
+                      <maxmem>1048m</maxmem>-->
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <version>${version.source-plugin}</version>
+                <executions>
+                    <execution>
+                        <goals>
+                            <goal>jar-no-fork</goal>
+                        </goals>
+                    </execution>
+                </executions>
+                <configuration>
+                    <attach>true</attach>
+                </configuration>
+            </plugin>
+
+            <!--<plugin>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+            <!--<version>${version.javadoc-plugin}</version>-->
+            <!--<configuration>-->
+            <!--<aggregate>true</aggregate>-->
+            <!--<charset>UTF-8</charset>-->
+            <!--<encoding>UTF-8</encoding>-->
+            <!--<docencoding>UTF-8</docencoding>-->
+            <!--<useStandardDocletOptions>false</useStandardDocletOptions>-->
+            <!--<additionalparam>-Xdoclint:none</additionalparam>-->
+            <!--</configuration>-->
+            <!--<executions>-->
+            <!--<execution>-->
+            <!--<phase>package</phase>-->
+            <!--<goals>-->
+            <!--<goal>jar</goal>-->
+            <!--</goals>-->
+            <!--</execution>-->
+            <!--</executions>-->
+            <!--</plugin>-->
+            <!-- Entity注释生成JavaDoc插件 -->
+            <!--<plugin>-->
+            <!--<groupId>org.apache.maven.plugins</groupId>-->
+            <!--<artifactId>maven-javadoc-plugin</artifactId>-->
+            <!--<version>2.9</version>-->
+            <!--<configuration>-->
+            <!--<charset>UTF-8</charset>-->
+            <!--<doclet>org.beangle.commons.entity.comment.Generator</doclet>-->
+            <!--<docletArtifact>-->
+            <!--<groupId>org.beangle.commons</groupId>-->
+            <!--<artifactId>beangle-commons-model</artifactId>-->
+            <!--<version>3.5.3</version>-->
+            <!--</docletArtifact>-->
+            <!--<locale>zh_CN</locale>-->
+            <!--<useStandardDocletOptions>false</useStandardDocletOptions>-->
+            <!--</configuration>-->
+            <!--</plugin>-->
+        </plugins>
+    </build>
+</project>
