@@ -1,0 +1,17 @@
+---
+appType: java
+nameSpacePrefix: "huangjian"
+appName: "admin-store"
+listenPorts:
+  - 18117
+jarFile: "target/admin-store.jar"
+javaRunOptions:
+  - "-Xms1024m"
+  - "-Xmx2048m"
+  - "-Djava.security.egd=file:/dev/./urandom"
+#  - "-Dapollo.meta="
+#  - "-Dapollo.cluster="
+healthCheck:
+  uri: /actuator/health
+  port: 18117
+#skywalkingCollector:
